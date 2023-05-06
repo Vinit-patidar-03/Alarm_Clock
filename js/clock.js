@@ -3,11 +3,12 @@ let tones = ["./Song/Hanuman.mp3", "./Song/Har_har_shambhu.mp3", "./Song/Mera_Bh
 let click = document.getElementById('set');
 let count = false;
 let audio;
-let notify=document.getElementById('notify');
+let notify = document.getElementById('notify');
 let Ringtone = document.getElementById('Ringtone');
 
-Ringtone.addEventListener('change', () => 
-   audio = new Audio(tones[Ringtone.value-1]);
+Ringtone.addEventListener('change', () => {
+  audio = new Audio(tones[Ringtone.value - 1]);
+  console.log(audio);
 })
 
 setInterval(() => {
@@ -73,22 +74,19 @@ setInterval(() => {
       audio.pause();
     }
   }
-  if(input.value!='' && Input.value!='' && Ringtone.value!=0)
-{
-   click.disabled=false;
-}
-else
-{
-  click.disabled=true;
-}
+  if (input.value != '' && Input.value != '' && Ringtone.value != 0) {
+    click.disabled = false;
+  }
+  else {
+    click.disabled = true;
+  }
 }, 1000);
 
 
 click.addEventListener('click', () => {
   count = true;
-  notify.style.visibility="visible";
-  setTimeout(()=>
-  {
-    notify.style.visibility="hidden";
-  },3000);
+  notify.style.visibility = "visible";
+  setTimeout(() => {
+    notify.style.visibility = "hidden";
+  }, 3000);
 })
