@@ -6,12 +6,8 @@ let audio;
 let notify=document.getElementById('notify');
 let Ringtone = document.getElementById('Ringtone');
 
-Ringtone.addEventListener('click', () => {
-  if(Ringtone.value!=0)
-  {
-   audio = new Audio(tones[Ringtone.value-1]);
-   console.log(audio);
-  }
+Ringtone.addEventListener('change', () => 
+   audio = new Audio(tones[Ringtone.value-1]);
 })
 
 setInterval(() => {
