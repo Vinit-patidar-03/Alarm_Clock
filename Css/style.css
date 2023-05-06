@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: rgb(48, 46, 46); 
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: 435px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Clock {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  border-radius: 50px;
+  position: relative;
+}
+
+.clock img {
+  width: 100px;
+  filter: invert();
+}
+
+.Hours {
+  width: 4px;
+  height: 30px;
+  background-color: #FF6000;
+  border-radius: 2px;
+  position: absolute;
+  top: 20px;
+  left: 48px;
+  transform-origin: bottom;
+}
+
+.Minutes {
+  width: 3px;
+  height: 40px;
+  background-color: green;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 49px;
+  transform-origin: bottom;
+}
+
+.Seconds {
+  width: 2px;
+  height: 35px;
+  background-color: white;
+  border-radius: 1px;
+  position: absolute;
+  top: 15px;
+  left: 49px;
+  transform-origin: bottom;
+}
+
+.Alarm {
+  margin-top: 10px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(62, 58, 58);
+  margin-top: 20px;
+  box-shadow: 0px 0px 15px 2px aqua;
+}
+
+.head{
+  margin-top:10px;
+}
+.Alarm .head img {
+  width: 70px;
+  display: block;
+  margin: auto;
+}
+
+.Alarm .head h1 {
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.alarm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.alarm input {
+  border-radius: 12px;
+  height: 25px;
+  width: 275px;
+  font-size: 1rem;
+  margin: 5px 0px 20px 0px;
+  padding: 0px 10px;
+}
+
+#set
+{
+  padding: 5px 10px;
+  margin: 20px 0px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(0, 76, 255);
+  border: none;
+}
+
+#Ringtone
+{
+  border-radius: 12px;
+  height: 25px;
+  width: 300px;
+  font-size: 1rem;
+  margin: 5px 0px 20px 0px;
+  padding: 0px 10px;
+}
+
+#set:hover
+{
+  background-color: darkblue;
+}
+
+label
+{
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+#notify
+{
+  visibility:hidden;
+}

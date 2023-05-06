@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./images/alarm.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/phone.css">
+    <title>Alarm Clock</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="Clock">
+            <div class="clock">
+                <div class="Hours" id="hour"></div>
+                <div class="Minutes" id="min"></div>
+                <div class="Seconds" id="sec"></div>
+                <img src="./images/Clock.png" alt="Analog Clock">
+            </div>
+        </div>
+        <div class="Alarm">
+            <div class="head">
+                <img src="./images/alarm.png" alt="">
+                <h1>Alarm</h1>
+            </div>
+            <div class="alarm">
+                <label for="">Time:<input type="time" id="time"></label>
+                <label for="">Date:<input type="date" id="date"></label>
+                <label for="">Ringtone:<select name="ringtone" id="Ringtone">
+                    <option value="0">Select Ringtone</option>
+                    <option value="1">Hanuman</option>
+                    <option value="2">Har har Shambhu</option>
+                    <option value="3">Mera Bhola H Bhandari</option>
+                </select></label>
+                <button id="set">Set Alarm</button>
+                <h5 id="notify">Alarm Setted Successfully</h5>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./js/clock.js"></script>
+
+</html>

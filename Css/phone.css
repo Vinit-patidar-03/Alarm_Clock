@@ -1,0 +1,31 @@
+@media (max-width:450px) {
+  .alarm input {
+    width: 200px;
+  }
+
+  #Ringtone
+{
+  width: 225px;
+}
+
+.container
+{
+  width: 350px;
+}
+}
+
+@media (max-width:350px) {
+  .alarm input {
+    width: 175px;
+  }
+
+  #Ringtone
+  {
+    width: 200px;
+  }
+
+  .container
+{
+  width: 270px;
+}
+}
